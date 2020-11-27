@@ -1,11 +1,13 @@
-import React, {Component, useState} from "react";
-import '../styles/App.css';
+import React, { Component, useState } from "react";
+import "../styles/App.css";
+import SlideShow from "./slideShow";
 
-const App = () => {
+const App = (props) => {
   return (
-    <></>
-  )
-}
-
+    <>
+      <SlideShow slides={props.slides} />
+    </>
+  );
+};
 
 export default App;
